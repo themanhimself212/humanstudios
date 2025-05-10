@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Studios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+            background-image: linear-gradient(to bottom right, #8e9eab, #eef2f3);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            padding: 40px 20px;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .logo-text {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #000000;
+            text-shadow: 2px 2px 5px rgba(255,255,255,0.1);
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-size: 1.4rem;
+            color: #000000;
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+
+        .date-time {
+            font-size: 1.2rem;
+            margin: 12px 0 30px;
+            color: #000000;
+        }
+
+        .nav-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            max-width: 300px;
+            margin: 20px 0;
+        }
+
+        .nav-button {
+            padding: 14px;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #000000;
+            background: transparent;
+            border: 2px solid #000000;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background: black;
+            color: #ffffff;
+            box-shadow: 0 0 15px white;
+        }
+
+        .nav-button:active {
+            transform: scale(0.95);
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 24px 0;
+        }
+
+        .icon-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            
+            box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: #666666;
+            transition: fill 0.3s ease;
+        }
+
+        .icon-link:hover .icon {
+            fill: #000000;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="3danimatedgifs88341.gif" alt="Computer man" style="width:180px;height:180px;">
+        <div class="logo-text">HUMAN STUDIOS</div>
+        <div class="tagline">Rooted in Cairo. Made for the streets.</div>
+        <div class="date-time"></div>
+
+        <div class="nav-buttons">
+            <div class="nav-button">Home</div>
+            <div class="nav-button">Shop</div>
+            <div class="nav-button">Contact</div>
+        </div>
+
+        <div class="footer-container">
+            <a href="https://instagram.com/yourhandle" class="icon-link" target="_blank">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+
+            <a href="mailto:your@email.com" class="icon-link">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer">
+            <div>HUMAN STUDIOS</div>
+            <div>All rights reserved.</div>
+        </div>
+    </div>
+
+    <script>
+        const dtOptions = { day: '2-digit', month: '2-digit', year: 'numeric' };
+        const tmOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+
+        function updateDateTime() {
+            const now = new Date();
+            const formattedDate = now.toLocaleDateString('en-GB', dtOptions);
+            const formattedTime = now.toLocaleTimeString('en-US', tmOptions).toLowerCase();
+            document.querySelector('.date-time').textContent = `${formattedDate} ${formattedTime}`;
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+    </script>
+</body>
+</html>
